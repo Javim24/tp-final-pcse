@@ -1,0 +1,255 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Referencia del archivo LCD16x2_driver/Src/API_lcd_port.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b0ae007ab579bb20680ee76571fb0d31.html">LCD16x2_driver</a></li><li class="navelem"><a class="el" href="dir_c18781234de7e6c6c1c7acc24568d4ce.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo API_lcd_port.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Módulo que implementa la comunicación por I2C con el LCD.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_a_p_i__lcd__port_8h_source.html">API_lcd_port.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en API_lcd_port.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="_a_p_i__lcd__port_8c__incl.png" border="0" usemap="#a_l_c_d16x2__driver_2_src_2_a_p_i__lcd__port_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a69dbe42c511f9d0b2e5f61871b114a08" id="r_a69dbe42c511f9d0b2e5f61871b114a08"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_a_p_i__types_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd__port_8c.html#a69dbe42c511f9d0b2e5f61871b114a08">port_i2cInit</a> ()</td></tr>
+<tr class="memdesc:a69dbe42c511f9d0b2e5f61871b114a08"><td class="mdescLeft">&#160;</td><td class="mdescRight">Función privada para inicializar el I2C.  <br /></td></tr>
+<tr class="separator:a69dbe42c511f9d0b2e5f61871b114a08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a691283ae2119510f09219da9db2ce977" id="r_a691283ae2119510f09219da9db2ce977"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__types_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd__port_8c.html#a691283ae2119510f09219da9db2ce977">port_init</a> ()</td></tr>
+<tr class="memdesc:a691283ae2119510f09219da9db2ce977"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa el periférico I2C.  <br /></td></tr>
+<tr class="separator:a691283ae2119510f09219da9db2ce977"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e3839816ccf39a6b55172352e23ff46" id="r_a8e3839816ccf39a6b55172352e23ff46"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__types_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd__port_8c.html#a8e3839816ccf39a6b55172352e23ff46">port_i2cWriteByte</a> (uint8_t _byte)</td></tr>
+<tr class="memdesc:a8e3839816ccf39a6b55172352e23ff46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escribe un byte por I2C. Utiliza la función bloqueante para transmitir.  <br /></td></tr>
+<tr class="separator:a8e3839816ccf39a6b55172352e23ff46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acad9c4d9195284853fd87d581191087f" id="r_acad9c4d9195284853fd87d581191087f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd__port_8c.html#acad9c4d9195284853fd87d581191087f">port_delay</a> (uint32_t delay)</td></tr>
+<tr class="memdesc:acad9c4d9195284853fd87d581191087f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementa un delay bloqueante utilizando HAL_Delay.  <br /></td></tr>
+<tr class="separator:acad9c4d9195284853fd87d581191087f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aea0270255f9187151600502aa274b52a" id="r_aea0270255f9187151600502aa274b52a"><td class="memItemLeft" align="right" valign="top">static I2C_HandleTypeDef&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd__port_8c.html#aea0270255f9187151600502aa274b52a">I2C_HANDLE</a></td></tr>
+<tr class="memdesc:aea0270255f9187151600502aa274b52a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable global privada para controlar el periferico I2C.  <br /></td></tr>
+<tr class="separator:aea0270255f9187151600502aa274b52a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Módulo que implementa la comunicación por I2C con el LCD. </p>
+</div><h2 class="groupheader">Documentación de funciones</h2>
+<a id="acad9c4d9195284853fd87d581191087f" name="acad9c4d9195284853fd87d581191087f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acad9c4d9195284853fd87d581191087f">&#9670;&#160;</a></span>port_delay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void port_delay </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>delay</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implementa un delay bloqueante utilizando HAL_Delay. </p>
+<p>Implementa un delay bloqueante. </p>
+
+</div>
+</div>
+<a id="a69dbe42c511f9d0b2e5f61871b114a08" name="a69dbe42c511f9d0b2e5f61871b114a08"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69dbe42c511f9d0b2e5f61871b114a08">&#9670;&#160;</a></span>port_i2cInit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_a_p_i__types_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> port_i2cInit </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Función privada para inicializar el I2C. </p>
+<p>Función para inicializar el I2C. Utiliza la HAL de STM32 para la configuración.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8e3839816ccf39a6b55172352e23ff46" name="a8e3839816ccf39a6b55172352e23ff46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e3839816ccf39a6b55172352e23ff46">&#9670;&#160;</a></span>port_i2cWriteByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__types_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> port_i2cWriteByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>_byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Escribe un byte por I2C. Utiliza la función bloqueante para transmitir. </p>
+<p>Escribe un byte por I2C.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a691283ae2119510f09219da9db2ce977" name="a691283ae2119510f09219da9db2ce977"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a691283ae2119510f09219da9db2ce977">&#9670;&#160;</a></span>port_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__types_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> port_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa el periférico I2C. </p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="aea0270255f9187151600502aa274b52a" name="aea0270255f9187151600502aa274b52a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aea0270255f9187151600502aa274b52a">&#9670;&#160;</a></span>I2C_HANDLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">I2C_HandleTypeDef I2C_HANDLE</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable global privada para controlar el periferico I2C. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

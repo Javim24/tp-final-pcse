@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Referencia del archivo Src/API_db.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_413f4e031a85da0d68269c6fd2f76e1c.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo API_db.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Módulo que simula una base de datos. En este archivo se encuentra la implementación de funciones de la base de datos y las variables privadas.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_a_p_i__db_8h_source.html">API_db.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en API_db.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="_a_p_i__db_8c__incl.png" border="0" usemap="#a_src_2_a_p_i__db_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:ada56a6e609860a2d7da8a6a614ef4a63" id="r_ada56a6e609860a2d7da8a6a614ef4a63"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__db_8c.html#ada56a6e609860a2d7da8a6a614ef4a63">LARGO_USUARIOS_AUTORIZADOS</a>&#160;&#160;&#160;4</td></tr>
+<tr class="separator:ada56a6e609860a2d7da8a6a614ef4a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:ac50fdf4bae0c65ce9b7f2821f0ca701a" id="r_ac50fdf4bae0c65ce9b7f2821f0ca701a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__db_8c.html#ac50fdf4bae0c65ce9b7f2821f0ca701a">DB_init</a> ()</td></tr>
+<tr class="memdesc:ac50fdf4bae0c65ce9b7f2821f0ca701a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inicializa la base de datos. Copia el UID de USUARIO_1 en el arreglo de UIDs autorizados. Como el UID son 4 bytes, esto puede ser interpretado como un uint32_t.  <br /></td></tr>
+<tr class="separator:ac50fdf4bae0c65ce9b7f2821f0ca701a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f9a7fa9fc4164b7a4327a2c86eefb65" id="r_a7f9a7fa9fc4164b7a4327a2c86eefb65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__db_8c.html#a7f9a7fa9fc4164b7a4327a2c86eefb65">DB_consultarUID</a> (uint8_t *<a class="el" href="_a_p_i__control__acceso_8c.html#a188415c8ef9768688b009b6858b3f575">uid</a>)</td></tr>
+<tr class="memdesc:a7f9a7fa9fc4164b7a4327a2c86eefb65"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza una consulta a la base de datos a partir de un UID. Recorre el vector de usuarios autorizados y compara el UID como uint32_t. Si el UID coincide con alguno en el vector, devuelve verdadero.  <br /></td></tr>
+<tr class="separator:a7f9a7fa9fc4164b7a4327a2c86eefb65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:afcf55d0af80c1b412ab44cbbd712af66" id="r_afcf55d0af80c1b412ab44cbbd712af66"><td class="memItemLeft" align="right" valign="top">static uint32_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__db_8c.html#afcf55d0af80c1b412ab44cbbd712af66">usuariosAutorizados</a> [<a class="el" href="_a_p_i__db_8c.html#ada56a6e609860a2d7da8a6a614ef4a63">LARGO_USUARIOS_AUTORIZADOS</a>]</td></tr>
+<tr class="separator:afcf55d0af80c1b412ab44cbbd712af66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1166380b791a73f07079a50d511fc3b" id="r_ae1166380b791a73f07079a50d511fc3b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__db_8c.html#ae1166380b791a73f07079a50d511fc3b">USUARIO_1</a> [] = { 0xC0, 0x7D, 0x5E, 0xA8 }</td></tr>
+<tr class="separator:ae1166380b791a73f07079a50d511fc3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Módulo que simula una base de datos. En este archivo se encuentra la implementación de funciones de la base de datos y las variables privadas. </p>
+</div><h2 class="groupheader">Documentación de «define»</h2>
+<a id="ada56a6e609860a2d7da8a6a614ef4a63" name="ada56a6e609860a2d7da8a6a614ef4a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada56a6e609860a2d7da8a6a614ef4a63">&#9670;&#160;</a></span>LARGO_USUARIOS_AUTORIZADOS</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define LARGO_USUARIOS_AUTORIZADOS&#160;&#160;&#160;4</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="a7f9a7fa9fc4164b7a4327a2c86eefb65" name="a7f9a7fa9fc4164b7a4327a2c86eefb65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f9a7fa9fc4164b7a4327a2c86eefb65">&#9670;&#160;</a></span>DB_consultarUID()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> DB_consultarUID </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t *&#160;</td>
+          <td class="paramname"><em>uid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza una consulta a la base de datos a partir de un UID. Recorre el vector de usuarios autorizados y compara el UID como uint32_t. Si el UID coincide con alguno en el vector, devuelve verdadero. </p>
+<p>Realiza una consulta a la base de datos a partir de un UID.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Devuelve</td><td>verdadero si el UID se encuentra en la base de datos, o falso si no se encuentra. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac50fdf4bae0c65ce9b7f2821f0ca701a" name="ac50fdf4bae0c65ce9b7f2821f0ca701a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac50fdf4bae0c65ce9b7f2821f0ca701a">&#9670;&#160;</a></span>DB_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> DB_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Inicializa la base de datos. Copia el UID de USUARIO_1 en el arreglo de UIDs autorizados. Como el UID son 4 bytes, esto puede ser interpretado como un uint32_t. </p>
+<p>Inicializa la base de datos.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="ae1166380b791a73f07079a50d511fc3b" name="ae1166380b791a73f07079a50d511fc3b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1166380b791a73f07079a50d511fc3b">&#9670;&#160;</a></span>USUARIO_1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t USUARIO_1[] = { 0xC0, 0x7D, 0x5E, 0xA8 }</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afcf55d0af80c1b412ab44cbbd712af66" name="afcf55d0af80c1b412ab44cbbd712af66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcf55d0af80c1b412ab44cbbd712af66">&#9670;&#160;</a></span>usuariosAutorizados</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t* usuariosAutorizados[<a class="el" href="_a_p_i__db_8c.html#ada56a6e609860a2d7da8a6a614ef4a63">LARGO_USUARIOS_AUTORIZADOS</a>]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

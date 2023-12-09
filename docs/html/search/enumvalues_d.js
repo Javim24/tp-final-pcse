@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['tcountervalueregh_0',['TCounterValueRegH',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a8f13bc7128a45ed1633ca892c7a4b1b2',1,'API_mfrc522.c']]],
+  ['tcountervalueregl_1',['TCounterValueRegL',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968aadad391e263f7ac82084e6c596993c68',1,'API_mfrc522.c']]],
+  ['testadcreg_2',['TestADCReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a1ea6e81ccd3e54c1239ad12ba5749782',1,'API_mfrc522.c']]],
+  ['testbusreg_3',['TestBusReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a6433267eb08d10b58cd800dbc7b529a8',1,'API_mfrc522.c']]],
+  ['testdac1reg_4',['TestDAC1Reg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a98f407e6a830582438b3320f8380c972',1,'API_mfrc522.c']]],
+  ['testdac2reg_5',['TestDAC2Reg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968afd7e36154e09494a91968eb5ed44d93a',1,'API_mfrc522.c']]],
+  ['testpinenreg_6',['TestPinEnReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a37fb7feeab1070e258579f18299d1a9a',1,'API_mfrc522.c']]],
+  ['testpinvaluereg_7',['TestPinValueReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968ae7daeb54321b5d2e6aec7022a6c64416',1,'API_mfrc522.c']]],
+  ['testsel1reg_8',['TestSel1Reg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968aef0ca68ecd579bd9f22d5b8c9643e85f',1,'API_mfrc522.c']]],
+  ['testsel2reg_9',['TestSel2Reg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968ade5ab9c9d45b382fa5dcffb45e021d1b',1,'API_mfrc522.c']]],
+  ['tmodereg_10',['TModeReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a63c6304aa100bdbda65816f86aaff845',1,'API_mfrc522.c']]],
+  ['tprescalerreg_11',['TPrescalerReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a92457eb3976a0cbc964904c9b60c7472',1,'API_mfrc522.c']]],
+  ['transceive_12',['Transceive',['../_a_p_i__mfrc522_8c.html#aaba14f5e836de8471ba5bc53959ddf8da6d4936d79b01a98a9ff183a70bf51809',1,'API_mfrc522.c']]],
+  ['transmit_13',['Transmit',['../_a_p_i__mfrc522_8c.html#aaba14f5e836de8471ba5bc53959ddf8dabfe0b4da68061025c67c7a77b8b6abd2',1,'API_mfrc522.c']]],
+  ['treloadregh_14',['TReloadRegH',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a084a579945750baffc4ad06b303ce1dd',1,'API_mfrc522.c']]],
+  ['treloadregl_15',['TReloadRegL',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a721fa71eb399dd53002cd1ce57e0be68',1,'API_mfrc522.c']]],
+  ['txaskreg_16',['TxASKReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a2f299062821a1fd11ee4a00237067f9e',1,'API_mfrc522.c']]],
+  ['txcontrolreg_17',['TxControlReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968a65213c0501e7190ce9199e213cc1df94',1,'API_mfrc522.c']]],
+  ['txmodereg_18',['TxModeReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968ae964bbe76df59c079d91d8d6661ed784',1,'API_mfrc522.c']]],
+  ['txselreg_19',['TxSelReg',['../_a_p_i__mfrc522_8c.html#a473a33a7cd8ec6b70b56a210e5cc1968ab1aacaadee01eb850fc75e349b8756fb',1,'API_mfrc522.c']]]
+];

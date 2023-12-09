@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Archivo de código fuente Inc/API_control_acceso.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f93dfce691d792349f1c14ede440e2e6.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">API_control_acceso.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_p_i__control__acceso_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#ifndef API_INC_API_CONTROL_ACCESO_H_</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#define API_INC_API_CONTROL_ACCESO_H_</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="foldopen" id="foldopen00018" data-start="{" data-end="};">
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1e">   18</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1eaac6ea7cce7cfe7b490e5c7e9683c4356">   19</a></span>    <a class="code hl_enumvalue" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1eaac6ea7cce7cfe7b490e5c7e9683c4356">API_OK</a>, <a class="code hl_enumvalue" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1eae60fd7b677ca3d8f27fcb4dca4c76419">API_ERROR</a></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1eae60fd7b677ca3d8f27fcb4dca4c76419">   20</a></span>} <a class="code hl_enumeration" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1e">API_StatusTypedef</a>;</div>
+</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><a class="code hl_enumeration" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1e">API_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__control__acceso_8h.html#a5af618a9a291a5c3d80890390e68169c">controlAcceso_init</a>();</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><a class="code hl_enumeration" href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1e">API_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__control__acceso_8h.html#ac1a4e6348a8de2628d076aff5d53ece9">controlAcceso_update</a>();</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#endif </span><span class="comment">/* API_INC_API_CONTROL_ACCESO_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_a_p_i__control__acceso_8h_html_a2dd474bc9b092b0282e217c611782f1e"><div class="ttname"><a href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1e">API_StatusTypedef</a></div><div class="ttdeci">API_StatusTypedef</div><div class="ttdoc">Enumeración para control de errores.</div><div class="ttdef"><b>Definition</b> API_control_acceso.h:18</div></div>
+<div class="ttc" id="a_a_p_i__control__acceso_8h_html_a2dd474bc9b092b0282e217c611782f1eaac6ea7cce7cfe7b490e5c7e9683c4356"><div class="ttname"><a href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1eaac6ea7cce7cfe7b490e5c7e9683c4356">API_OK</a></div><div class="ttdeci">@ API_OK</div><div class="ttdef"><b>Definition</b> API_control_acceso.h:19</div></div>
+<div class="ttc" id="a_a_p_i__control__acceso_8h_html_a2dd474bc9b092b0282e217c611782f1eae60fd7b677ca3d8f27fcb4dca4c76419"><div class="ttname"><a href="_a_p_i__control__acceso_8h.html#a2dd474bc9b092b0282e217c611782f1eae60fd7b677ca3d8f27fcb4dca4c76419">API_ERROR</a></div><div class="ttdeci">@ API_ERROR</div><div class="ttdef"><b>Definition</b> API_control_acceso.h:19</div></div>
+<div class="ttc" id="a_a_p_i__control__acceso_8h_html_a5af618a9a291a5c3d80890390e68169c"><div class="ttname"><a href="_a_p_i__control__acceso_8h.html#a5af618a9a291a5c3d80890390e68169c">controlAcceso_init</a></div><div class="ttdeci">API_StatusTypedef controlAcceso_init()</div><div class="ttdoc">Función de inicio del sistema de control de acceso.</div><div class="ttdef"><b>Definition</b> API_control_acceso.c:59</div></div>
+<div class="ttc" id="a_a_p_i__control__acceso_8h_html_ac1a4e6348a8de2628d076aff5d53ece9"><div class="ttname"><a href="_a_p_i__control__acceso_8h.html#ac1a4e6348a8de2628d076aff5d53ece9">controlAcceso_update</a></div><div class="ttdeci">API_StatusTypedef controlAcceso_update()</div><div class="ttdoc">Función que actualiza el estado del sistema según la entrada.</div><div class="ttdef"><b>Definition</b> API_control_acceso.c:85</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

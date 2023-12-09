@@ -1,0 +1,768 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Referencia del archivo LCD16x2_driver/Src/API_lcd.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b0ae007ab579bb20680ee76571fb0d31.html">LCD16x2_driver</a></li><li class="navelem"><a class="el" href="dir_c18781234de7e6c6c1c7acc24568d4ce.html">Src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">defines</a> &#124;
+<a href="#func-members">Funciones</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">Referencia del archivo API_lcd.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Implementación de funciones del módulo lcd.  
+<a href="#details">Más...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="_a_p_i__lcd_8h_source.html">API_lcd.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_a_p_i__types_8h_source.html">API_types.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Gráfico de dependencias incluidas en API_lcd.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="_a_p_i__lcd_8c__incl.png" border="0" usemap="#a_l_c_d16x2__driver_2_src_2_a_p_i__lcd_8c" alt=""/></div>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+defines</h2></td></tr>
+<tr class="memitem:a9142da0b490144f24168c5dbdaff161e" id="r_a9142da0b490144f24168c5dbdaff161e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a9142da0b490144f24168c5dbdaff161e">_4BIT_MODE</a>&#160;&#160;&#160;0x28</td></tr>
+<tr class="separator:a9142da0b490144f24168c5dbdaff161e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c80ace5656e5bdca4af4c7233921f5" id="r_a74c80ace5656e5bdca4af4c7233921f5"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a74c80ace5656e5bdca4af4c7233921f5">DISPLAY_CONTROL</a>&#160;&#160;&#160;(1&lt;&lt;3)</td></tr>
+<tr class="separator:a74c80ace5656e5bdca4af4c7233921f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a132a90af728916a595bcf5a52cfac21c" id="r_a132a90af728916a595bcf5a52cfac21c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a132a90af728916a595bcf5a52cfac21c">RETURN_HOME</a>&#160;&#160;&#160;(1&lt;&lt;1)</td></tr>
+<tr class="separator:a132a90af728916a595bcf5a52cfac21c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7c67b7105bcd21f4bb1f978d0445dfe8" id="r_a7c67b7105bcd21f4bb1f978d0445dfe8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a7c67b7105bcd21f4bb1f978d0445dfe8">ENTRY_MODE</a>&#160;&#160;&#160;(1&lt;&lt;2)</td></tr>
+<tr class="separator:a7c67b7105bcd21f4bb1f978d0445dfe8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4065f0c24769fa34f05d476058520133" id="r_a4065f0c24769fa34f05d476058520133"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a4065f0c24769fa34f05d476058520133">AUTOINCREMENT</a>&#160;&#160;&#160;(1&lt;&lt;1)</td></tr>
+<tr class="separator:a4065f0c24769fa34f05d476058520133"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ae6b05b3e1559c97f0d1b2daaaa0ee4" id="r_a5ae6b05b3e1559c97f0d1b2daaaa0ee4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a5ae6b05b3e1559c97f0d1b2daaaa0ee4">DISPLAY_ON</a>&#160;&#160;&#160;(1&lt;&lt;2)</td></tr>
+<tr class="separator:a5ae6b05b3e1559c97f0d1b2daaaa0ee4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ea0de856967743feadd228ea58fb729" id="r_a0ea0de856967743feadd228ea58fb729"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a0ea0de856967743feadd228ea58fb729">CLR_LCD</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a0ea0de856967743feadd228ea58fb729"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab0d87e07831e7e4943caef187872123e" id="r_ab0d87e07831e7e4943caef187872123e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#ab0d87e07831e7e4943caef187872123e">COMMAND</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ab0d87e07831e7e4943caef187872123e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad9ae913bdfab20dd94ad04ee2d5b045" id="r_aad9ae913bdfab20dd94ad04ee2d5b045"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#aad9ae913bdfab20dd94ad04ee2d5b045">DATA</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:aad9ae913bdfab20dd94ad04ee2d5b045"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a514ad415fb6125ba296793df7d1a468a" id="r_a514ad415fb6125ba296793df7d1a468a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a514ad415fb6125ba296793df7d1a468a">ENABLE</a>&#160;&#160;&#160;(1&lt;&lt;2)</td></tr>
+<tr class="separator:a514ad415fb6125ba296793df7d1a468a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae17dbccf6d1d97bf00cb829d1b01fe1e" id="r_ae17dbccf6d1d97bf00cb829d1b01fe1e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#ae17dbccf6d1d97bf00cb829d1b01fe1e">POS_BACKLIGHT</a>&#160;&#160;&#160;(3)</td></tr>
+<tr class="separator:ae17dbccf6d1d97bf00cb829d1b01fe1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abcef573c51d9087ddc05dba64f602775" id="r_abcef573c51d9087ddc05dba64f602775"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#abcef573c51d9087ddc05dba64f602775">SET_CURSOR</a>&#160;&#160;&#160;(1&lt;&lt;7)</td></tr>
+<tr class="separator:abcef573c51d9087ddc05dba64f602775"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf764a93ccecfc79fed90d889d820508" id="r_abf764a93ccecfc79fed90d889d820508"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#abf764a93ccecfc79fed90d889d820508">CURSOR_ON</a>&#160;&#160;&#160;1&lt;&lt;1</td></tr>
+<tr class="separator:abf764a93ccecfc79fed90d889d820508"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a60efc213b940f3d1666c19decbad2" id="r_a19a60efc213b940f3d1666c19decbad2"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a19a60efc213b940f3d1666c19decbad2">CURSOR_BLINK</a>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a19a60efc213b940f3d1666c19decbad2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae920d68bf98c6bb1302fdda0f28f5ff1" id="r_ae920d68bf98c6bb1302fdda0f28f5ff1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#ae920d68bf98c6bb1302fdda0f28f5ff1">NULL_CHAR</a>&#160;&#160;&#160;'\0'</td></tr>
+<tr class="separator:ae920d68bf98c6bb1302fdda0f28f5ff1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Funciones</h2></td></tr>
+<tr class="memitem:a9b72cfef0f4cfe67d695944cdcf3e4cd" id="r_a9b72cfef0f4cfe67d695944cdcf3e4cd"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a9b72cfef0f4cfe67d695944cdcf3e4cd">LCD_sendMsg</a> (uint8_t, uint8_t)</td></tr>
+<tr class="memdesc:a9b72cfef0f4cfe67d695944cdcf3e4cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funciones privadas para enviar datos al LCD.  <br /></td></tr>
+<tr class="separator:a9b72cfef0f4cfe67d695944cdcf3e4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9165abab1795e0e17f6cb0006c901043" id="r_a9165abab1795e0e17f6cb0006c901043"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a9165abab1795e0e17f6cb0006c901043">LCD_sendByte</a> (uint8_t _byte)</td></tr>
+<tr class="memdesc:a9165abab1795e0e17f6cb0006c901043"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía un byte al LCD. El envío consiste en envíar primero el byte con el bit de ENABLE en alto, y luego de 1ms envíar el byte sin el ENABLE. Esto genera el flanco descendiente necesario para que el controlador del LCD lea los datos.  <br /></td></tr>
+<tr class="separator:a9165abab1795e0e17f6cb0006c901043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6462adcbde64a7a0deb701fbe145b0d" id="r_af6462adcbde64a7a0deb701fbe145b0d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#af6462adcbde64a7a0deb701fbe145b0d">LCD_sendNibble</a> (uint8_t dato, uint8_t rs)</td></tr>
+<tr class="memdesc:af6462adcbde64a7a0deb701fbe145b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Envía los 4 bits menos significativos de dato, junto con los bits de rs, backlight.  <br /></td></tr>
+<tr class="separator:af6462adcbde64a7a0deb701fbe145b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a2f12e0d2585405560c21f8ccf2c845" id="r_a8a2f12e0d2585405560c21f8ccf2c845"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a8a2f12e0d2585405560c21f8ccf2c845">LCD_init</a> ()</td></tr>
+<tr class="memdesc:a8a2f12e0d2585405560c21f8ccf2c845"><td class="mdescLeft">&#160;</td><td class="mdescRight">Realiza la secuencia de inicialización del LCD.  <br /></td></tr>
+<tr class="separator:a8a2f12e0d2585405560c21f8ccf2c845"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab63a80e8b4373e36f3e30e2860f5419" id="r_aab63a80e8b4373e36f3e30e2860f5419"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#aab63a80e8b4373e36f3e30e2860f5419">LCD_clear</a> ()</td></tr>
+<tr class="memdesc:aab63a80e8b4373e36f3e30e2860f5419"><td class="mdescLeft">&#160;</td><td class="mdescRight">Limpia la pantalla del LCD. Para esto envía el comando CLR_LCD.  <br /></td></tr>
+<tr class="separator:aab63a80e8b4373e36f3e30e2860f5419"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a358517ddb6998273f3c403752449bf67" id="r_a358517ddb6998273f3c403752449bf67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a358517ddb6998273f3c403752449bf67">LCD_setCursor</a> (uint8_t fila, uint8_t posicion)</td></tr>
+<tr class="memdesc:a358517ddb6998273f3c403752449bf67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coloca el cursor del LCD en (fila, posición).  <br /></td></tr>
+<tr class="separator:a358517ddb6998273f3c403752449bf67"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e5f69051582c2b99facff065568b0d" id="r_a61e5f69051582c2b99facff065568b0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a61e5f69051582c2b99facff065568b0d">LCD_printChar</a> (char dato)</td></tr>
+<tr class="memdesc:a61e5f69051582c2b99facff065568b0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coloca una caracter en la pantalla del LCD.  <br /></td></tr>
+<tr class="separator:a61e5f69051582c2b99facff065568b0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30a7e3813967bb75b964ca8627658e95" id="r_a30a7e3813967bb75b964ca8627658e95"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a30a7e3813967bb75b964ca8627658e95">LCD_printText</a> (char *ptrTexto)</td></tr>
+<tr class="memdesc:a30a7e3813967bb75b964ca8627658e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Escribe un texto en el LCD. Para esto recorre el puntero de entrada y verifica que el caracter no sea NULL_CHAR. Utiliza la función LCD_printChar.  <br /></td></tr>
+<tr class="separator:a30a7e3813967bb75b964ca8627658e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a534de5c5280f7b7e9d51fc02bfa93f09" id="r_a534de5c5280f7b7e9d51fc02bfa93f09"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a534de5c5280f7b7e9d51fc02bfa93f09">LCD_cursorOn</a> ()</td></tr>
+<tr class="memdesc:a534de5c5280f7b7e9d51fc02bfa93f09"><td class="mdescLeft">&#160;</td><td class="mdescRight">Muestra un cursor que parpadea en la pantalla del LCD.  <br /></td></tr>
+<tr class="separator:a534de5c5280f7b7e9d51fc02bfa93f09"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac43ef3ac8991fdf2c39a2027cc9ef48b" id="r_ac43ef3ac8991fdf2c39a2027cc9ef48b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#ac43ef3ac8991fdf2c39a2027cc9ef48b">LCD_cursorOff</a> ()</td></tr>
+<tr class="memdesc:ac43ef3ac8991fdf2c39a2027cc9ef48b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apaga el cursor.  <br /></td></tr>
+<tr class="separator:ac43ef3ac8991fdf2c39a2027cc9ef48b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3e8b2e79a924e04f88309023ad3ea373" id="r_a3e8b2e79a924e04f88309023ad3ea373"><td class="memItemLeft" align="right" valign="top">static uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#a3e8b2e79a924e04f88309023ad3ea373">back_light</a> = 1</td></tr>
+<tr class="separator:a3e8b2e79a924e04f88309023ad3ea373"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52ae101fc377f332b82629005f1e23b" id="r_ac52ae101fc377f332b82629005f1e23b"><td class="memItemLeft" align="right" valign="top">static const uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_a_p_i__lcd_8c.html#ac52ae101fc377f332b82629005f1e23b">LCD_INIT_CMD</a> []</td></tr>
+<tr class="memdesc:ac52ae101fc377f332b82629005f1e23b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Secuencia de comandos para configurar el LCD.  <br /></td></tr>
+<tr class="separator:ac52ae101fc377f332b82629005f1e23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Descripción detallada</h2>
+<div class="textblock"><p>Implementación de funciones del módulo lcd. </p>
+</div><h2 class="groupheader">Documentación de «define»</h2>
+<a id="a9142da0b490144f24168c5dbdaff161e" name="a9142da0b490144f24168c5dbdaff161e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9142da0b490144f24168c5dbdaff161e">&#9670;&#160;</a></span>_4BIT_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define _4BIT_MODE&#160;&#160;&#160;0x28</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4065f0c24769fa34f05d476058520133" name="a4065f0c24769fa34f05d476058520133"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4065f0c24769fa34f05d476058520133">&#9670;&#160;</a></span>AUTOINCREMENT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define AUTOINCREMENT&#160;&#160;&#160;(1&lt;&lt;1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0ea0de856967743feadd228ea58fb729" name="a0ea0de856967743feadd228ea58fb729"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ea0de856967743feadd228ea58fb729">&#9670;&#160;</a></span>CLR_LCD</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CLR_LCD&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab0d87e07831e7e4943caef187872123e" name="ab0d87e07831e7e4943caef187872123e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab0d87e07831e7e4943caef187872123e">&#9670;&#160;</a></span>COMMAND</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define COMMAND&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a19a60efc213b940f3d1666c19decbad2" name="a19a60efc213b940f3d1666c19decbad2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a60efc213b940f3d1666c19decbad2">&#9670;&#160;</a></span>CURSOR_BLINK</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSOR_BLINK&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abf764a93ccecfc79fed90d889d820508" name="abf764a93ccecfc79fed90d889d820508"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf764a93ccecfc79fed90d889d820508">&#9670;&#160;</a></span>CURSOR_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CURSOR_ON&#160;&#160;&#160;1&lt;&lt;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aad9ae913bdfab20dd94ad04ee2d5b045" name="aad9ae913bdfab20dd94ad04ee2d5b045"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aad9ae913bdfab20dd94ad04ee2d5b045">&#9670;&#160;</a></span>DATA</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DATA&#160;&#160;&#160;1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a74c80ace5656e5bdca4af4c7233921f5" name="a74c80ace5656e5bdca4af4c7233921f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c80ace5656e5bdca4af4c7233921f5">&#9670;&#160;</a></span>DISPLAY_CONTROL</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISPLAY_CONTROL&#160;&#160;&#160;(1&lt;&lt;3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ae6b05b3e1559c97f0d1b2daaaa0ee4" name="a5ae6b05b3e1559c97f0d1b2daaaa0ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ae6b05b3e1559c97f0d1b2daaaa0ee4">&#9670;&#160;</a></span>DISPLAY_ON</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DISPLAY_ON&#160;&#160;&#160;(1&lt;&lt;2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a514ad415fb6125ba296793df7d1a468a" name="a514ad415fb6125ba296793df7d1a468a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a514ad415fb6125ba296793df7d1a468a">&#9670;&#160;</a></span>ENABLE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENABLE&#160;&#160;&#160;(1&lt;&lt;2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7c67b7105bcd21f4bb1f978d0445dfe8" name="a7c67b7105bcd21f4bb1f978d0445dfe8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7c67b7105bcd21f4bb1f978d0445dfe8">&#9670;&#160;</a></span>ENTRY_MODE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define ENTRY_MODE&#160;&#160;&#160;(1&lt;&lt;2)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae920d68bf98c6bb1302fdda0f28f5ff1" name="ae920d68bf98c6bb1302fdda0f28f5ff1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae920d68bf98c6bb1302fdda0f28f5ff1">&#9670;&#160;</a></span>NULL_CHAR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NULL_CHAR&#160;&#160;&#160;'\0'</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae17dbccf6d1d97bf00cb829d1b01fe1e" name="ae17dbccf6d1d97bf00cb829d1b01fe1e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae17dbccf6d1d97bf00cb829d1b01fe1e">&#9670;&#160;</a></span>POS_BACKLIGHT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define POS_BACKLIGHT&#160;&#160;&#160;(3)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a132a90af728916a595bcf5a52cfac21c" name="a132a90af728916a595bcf5a52cfac21c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a132a90af728916a595bcf5a52cfac21c">&#9670;&#160;</a></span>RETURN_HOME</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define RETURN_HOME&#160;&#160;&#160;(1&lt;&lt;1)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="abcef573c51d9087ddc05dba64f602775" name="abcef573c51d9087ddc05dba64f602775"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abcef573c51d9087ddc05dba64f602775">&#9670;&#160;</a></span>SET_CURSOR</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SET_CURSOR&#160;&#160;&#160;(1&lt;&lt;7)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de funciones</h2>
+<a id="aab63a80e8b4373e36f3e30e2860f5419" name="aab63a80e8b4373e36f3e30e2860f5419"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab63a80e8b4373e36f3e30e2860f5419">&#9670;&#160;</a></span>LCD_clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Limpia la pantalla del LCD. Para esto envía el comando CLR_LCD. </p>
+<p>Borra el contenido de la pantalla del LCD.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac43ef3ac8991fdf2c39a2027cc9ef48b" name="ac43ef3ac8991fdf2c39a2027cc9ef48b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac43ef3ac8991fdf2c39a2027cc9ef48b">&#9670;&#160;</a></span>LCD_cursorOff()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_cursorOff </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Apaga el cursor. </p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a534de5c5280f7b7e9d51fc02bfa93f09" name="a534de5c5280f7b7e9d51fc02bfa93f09"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a534de5c5280f7b7e9d51fc02bfa93f09">&#9670;&#160;</a></span>LCD_cursorOn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_cursorOn </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Muestra un cursor que parpadea en la pantalla del LCD. </p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a8a2f12e0d2585405560c21f8ccf2c845" name="a8a2f12e0d2585405560c21f8ccf2c845"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a2f12e0d2585405560c21f8ccf2c845">&#9670;&#160;</a></span>LCD_init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_init </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Realiza la secuencia de inicialización del LCD. </p>
+<p>Realiza la inicialización del LCD para que quede listo para ser utilizado.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a61e5f69051582c2b99facff065568b0d" name="a61e5f69051582c2b99facff065568b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61e5f69051582c2b99facff065568b0d">&#9670;&#160;</a></span>LCD_printChar()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_printChar </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>dato</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Coloca una caracter en la pantalla del LCD. </p>
+<p>Coloca un único caracter en la pantalla del LCD.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a30a7e3813967bb75b964ca8627658e95" name="a30a7e3813967bb75b964ca8627658e95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30a7e3813967bb75b964ca8627658e95">&#9670;&#160;</a></span>LCD_printText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_printText </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>ptrTexto</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Escribe un texto en el LCD. Para esto recorre el puntero de entrada y verifica que el caracter no sea NULL_CHAR. Utiliza la función LCD_printChar. </p>
+<p>Escribe un texto en la pantalla del LCD, comenzando desde la FILA 1 y posición 0. Si detecta el caracter '<br  />
+', pasa a la siguiente linea.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9165abab1795e0e17f6cb0006c901043" name="a9165abab1795e0e17f6cb0006c901043"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9165abab1795e0e17f6cb0006c901043">&#9670;&#160;</a></span>LCD_sendByte()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_sendByte </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>_byte</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Envía un byte al LCD. El envío consiste en envíar primero el byte con el bit de ENABLE en alto, y luego de 1ms envíar el byte sin el ENABLE. Esto genera el flanco descendiente necesario para que el controlador del LCD lea los datos. </p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9b72cfef0f4cfe67d695944cdcf3e4cd" name="a9b72cfef0f4cfe67d695944cdcf3e4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b72cfef0f4cfe67d695944cdcf3e4cd">&#9670;&#160;</a></span>LCD_sendMsg()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_sendMsg </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>dato</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>rs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Funciones privadas para enviar datos al LCD. </p>
+<p>Envía un mensaje al LCD, que puede ser un comando (rs=0) o un dato (rs=1). El envío de mensajes se realiza primero con los 4 bits mas significativos del dato y luego los 4 menos significativos (esto es así porque se trabaja en modo 4BITS). También tiene en cuenta el bit de back_light en cada envío.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af6462adcbde64a7a0deb701fbe145b0d" name="af6462adcbde64a7a0deb701fbe145b0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6462adcbde64a7a0deb701fbe145b0d">&#9670;&#160;</a></span>LCD_sendNibble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_sendNibble </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>dato</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>rs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Envía los 4 bits menos significativos de dato, junto con los bits de rs, backlight. </p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a358517ddb6998273f3c403752449bf67" name="a358517ddb6998273f3c403752449bf67"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a358517ddb6998273f3c403752449bf67">&#9670;&#160;</a></span>LCD_setCursor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> LCD_setCursor </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>fila</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>posicion</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Coloca el cursor del LCD en (fila, posición). </p>
+<p>Posiciona el cursor del LCD en la posición indica por los argumentos de la función.</p>
+<dl class="retval"><dt>Valores devueltos</dt><dd>
+  <table class="retval">
+    <tr><td class="paramname">Estado</td><td>de ejecución. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Documentación de variables</h2>
+<a id="a3e8b2e79a924e04f88309023ad3ea373" name="a3e8b2e79a924e04f88309023ad3ea373"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8b2e79a924e04f88309023ad3ea373">&#9670;&#160;</a></span>back_light</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint8_t back_light = 1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac52ae101fc377f332b82629005f1e23b" name="ac52ae101fc377f332b82629005f1e23b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac52ae101fc377f332b82629005f1e23b">&#9670;&#160;</a></span>LCD_INIT_CMD</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const uint8_t LCD_INIT_CMD[]</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Valor inicial:</b><div class="fragment"><div class="line">= {</div>
+<div class="line"><a class="code hl_define" href="_a_p_i__lcd_8c.html#a9142da0b490144f24168c5dbdaff161e">_4BIT_MODE</a>,                 </div>
+<div class="line">        <a class="code hl_define" href="_a_p_i__lcd_8c.html#a74c80ace5656e5bdca4af4c7233921f5">DISPLAY_CONTROL</a>,                </div>
+<div class="line">        <a class="code hl_define" href="_a_p_i__lcd_8c.html#a132a90af728916a595bcf5a52cfac21c">RETURN_HOME</a>,                    </div>
+<div class="line">        <a class="code hl_define" href="_a_p_i__lcd_8c.html#a7c67b7105bcd21f4bb1f978d0445dfe8">ENTRY_MODE</a> | <a class="code hl_define" href="_a_p_i__lcd_8c.html#a4065f0c24769fa34f05d476058520133">AUTOINCREMENT</a>,</div>
+<div class="line">        <a class="code hl_define" href="_a_p_i__lcd_8c.html#a74c80ace5656e5bdca4af4c7233921f5">DISPLAY_CONTROL</a> | <a class="code hl_define" href="_a_p_i__lcd_8c.html#a5ae6b05b3e1559c97f0d1b2daaaa0ee4">DISPLAY_ON</a>,   </div>
+<div class="line">        <a class="code hl_define" href="_a_p_i__lcd_8c.html#a0ea0de856967743feadd228ea58fb729">CLR_LCD</a>                         </div>
+<div class="line">        }</div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a0ea0de856967743feadd228ea58fb729"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a0ea0de856967743feadd228ea58fb729">CLR_LCD</a></div><div class="ttdeci">#define CLR_LCD</div><div class="ttdef"><b>Definition</b> API_lcd.c:17</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a132a90af728916a595bcf5a52cfac21c"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a132a90af728916a595bcf5a52cfac21c">RETURN_HOME</a></div><div class="ttdeci">#define RETURN_HOME</div><div class="ttdef"><b>Definition</b> API_lcd.c:13</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a4065f0c24769fa34f05d476058520133"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a4065f0c24769fa34f05d476058520133">AUTOINCREMENT</a></div><div class="ttdeci">#define AUTOINCREMENT</div><div class="ttdef"><b>Definition</b> API_lcd.c:15</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a5ae6b05b3e1559c97f0d1b2daaaa0ee4"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a5ae6b05b3e1559c97f0d1b2daaaa0ee4">DISPLAY_ON</a></div><div class="ttdeci">#define DISPLAY_ON</div><div class="ttdef"><b>Definition</b> API_lcd.c:16</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a74c80ace5656e5bdca4af4c7233921f5"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a74c80ace5656e5bdca4af4c7233921f5">DISPLAY_CONTROL</a></div><div class="ttdeci">#define DISPLAY_CONTROL</div><div class="ttdef"><b>Definition</b> API_lcd.c:12</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a7c67b7105bcd21f4bb1f978d0445dfe8"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a7c67b7105bcd21f4bb1f978d0445dfe8">ENTRY_MODE</a></div><div class="ttdeci">#define ENTRY_MODE</div><div class="ttdef"><b>Definition</b> API_lcd.c:14</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8c_html_a9142da0b490144f24168c5dbdaff161e"><div class="ttname"><a href="_a_p_i__lcd_8c.html#a9142da0b490144f24168c5dbdaff161e">_4BIT_MODE</a></div><div class="ttdeci">#define _4BIT_MODE</div><div class="ttdef"><b>Definition</b> API_lcd.c:11</div></div>
+</div><!-- fragment -->
+<p>Secuencia de comandos para configurar el LCD. </p>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

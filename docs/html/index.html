@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Página principal del trabajo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div><div class="header">
+  <div class="headertitle"><div class="title">Página principal del trabajo </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="intro"></a>
+Introducción</h1>
+<p>Este trabajo final para la asignatura Protocolos de Comunicación de Sistemas embebidos consiste en la creación de un driver para el control de un módulo lector de RFID MFRC522 y un driver para la escritura de datos en una pantalla LCD. Estos drivers están desarrollados de manera que permiten abstraerse de el hardware en el que se utilizen. Para ello se divide cada driver en una implementación genérica de alto nivel, y una implementación de funciones de acceso al hardware. Esto con el objetivo de que se pueda trasladar fácilmente a otras plataformas.</p>
+<p>La utilización de estos drivers en un programa se encuentra en el repositorio del trabajo final de la materia Programación de Microcontroladores: <a href="https://github.com/Javim24/PdM_workspace/tree/main/CONTROL_ACCESO">https://github.com/Javim24/PdM_workspace/tree/main/CONTROL_ACCESO</a></p>
+<p>Este trabajo consiste en el desarrollo de un sistema de control de acceso que utiliza tarjetas RFID para permitir o no el acceso de un usuario.</p>
+<h1><a class="anchor" id="info"></a>
+Información</h1>
+<h2><a class="anchor" id="mfrc522"></a>
+Módulo MFRC522</h2>
+<p>El MFRC522 es un módulo lector de tags RFID que funciona en 13.56 MHz. Soporta la comunicación con tarjetas que se basan en el protocolo ISO/IEC 14443.</p>
+<p>El driver desarrollado está conformado por los archivos <a class="el" href="_a_p_i__mfrc522_8h.html">API_mfrc522.h</a>, <a class="el" href="_a_p_i__mfrc522_8c.html" title="Implementación de funciones públicas y privadas del módulo MFRC522.">API_mfrc522.c</a> y sus correspondientes implementaciones para acceso al hardware <a class="el" href="_a_p_i__mfrc522__port_8h.html" title="Módulo que implementa funciones de bajo nivel para utilizar el perifeco SPI.">API_mfrc522_port.h</a> y <a class="el" href="_a_p_i__mfrc522__port_8c.html" title="Implementa las funciones del módulo API_mfrc522_port.">API_mfrc522_port.c</a>.</p>
+<p>El driver permite el acceso a una interfaz simple con funciones que permiten inicializar el módulo y leer el UID de una tarjeta. El resto de funciones necesarias para el correcto manejo del módulo están declaradas como static en el archivo <a class="el" href="_a_p_i__mfrc522_8c.html" title="Implementación de funciones públicas y privadas del módulo MFRC522.">API_mfrc522.c</a>.</p>
+<h2><a class="anchor" id="display_lcd"></a>
+Display LCD</h2>
+<p>Se desarrolló un driver para un display LCD de 16x2 con adaptador para comunicación por I2C.</p>
+<p>El driver está compuesto por los archivos <a class="el" href="_a_p_i__lcd_8h.html" title="Módulo que controla las funcionalidades del display LCD. Utiliza el módulo API_lcd_port para acceder ...">API_lcd.h</a>, <a class="el" href="_a_p_i__lcd_8c.html" title="Implementación de funciones del módulo lcd.">API_lcd.c</a> y la implementación para acceder al hardware <a class="el" href="_a_p_i__lcd__port_8h.html">API_lcd_port.h</a> y <a class="el" href="_a_p_i__lcd__port_8c.html" title="Módulo que implementa la comunicación por I2C con el LCD.">API_lcd_port.c</a>. La implementación pública en <a class="el" href="_a_p_i__lcd_8h.html" title="Módulo que controla las funcionalidades del display LCD. Utiliza el módulo API_lcd_port para acceder ...">API_lcd.h</a> permite el acceso a funciones para la inicialización, borrado de pantalla, escritura de un caracter, escritura de un texto y configuración del cursor.</p>
+<h1><a class="anchor" id="autor"></a>
+Autor</h1>
+<p>Ing. Javier Mosconi</p>
+<p>Contacto: <a href="#" onclick="location.href='mai'+'lto:'+'jfm'+'os'+'con'+'i@'+'gma'+'il'+'.co'+'m'; return false;">jfmos<span class="obfuscator">.nosp@m.</span>coni<span class="obfuscator">.nosp@m.</span>@gmai<span class="obfuscator">.nosp@m.</span>l.co<span class="obfuscator">.nosp@m.</span>m</a></p>
+<p>Carrera de Especialización en Sistemas Embebidos - FIUBA</p>
+<p>Diciembre 2023 </p>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

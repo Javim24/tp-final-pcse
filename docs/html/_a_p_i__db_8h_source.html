@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Archivo de código fuente Inc/API_db.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_f93dfce691d792349f1c14ede440e2e6.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">API_db.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_p_i__db_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef API_INC_API_DB_H_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define API_INC_API_DB_H_</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_a_p_i__types_8h.html">API_types.h</a>&quot;</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_a_p_i__db_8h.html#a6703b5555de17066fe3c78f16b7bb397">   14</a></span><span class="preprocessor">#define UID_SIZE            4           </span><span class="comment">//tamaño en bytes del UID de las tarjetas RFID</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><a class="code hl_typedef" href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> <a class="code hl_function" href="_a_p_i__db_8h.html#ac50fdf4bae0c65ce9b7f2821f0ca701a">DB_init</a>();</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><a class="code hl_typedef" href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a> <a class="code hl_function" href="_a_p_i__db_8h.html#a38533594b66259f3c3dce8a7a7c58bdb">DB_consultarUID</a>(uint8_t*);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#endif </span><span class="comment">/* API_INC_API_DB_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_a_p_i__db_8h_html_a38533594b66259f3c3dce8a7a7c58bdb"><div class="ttname"><a href="_a_p_i__db_8h.html#a38533594b66259f3c3dce8a7a7c58bdb">DB_consultarUID</a></div><div class="ttdeci">bool_t DB_consultarUID(uint8_t *)</div><div class="ttdoc">Realiza una consulta a la base de datos a partir de un UID.</div><div class="ttdef"><b>Definition</b> API_db.c:38</div></div>
+<div class="ttc" id="a_a_p_i__db_8h_html_ac50fdf4bae0c65ce9b7f2821f0ca701a"><div class="ttname"><a href="_a_p_i__db_8h.html#ac50fdf4bae0c65ce9b7f2821f0ca701a">DB_init</a></div><div class="ttdeci">bool_t DB_init()</div><div class="ttdoc">Inicializa la base de datos.</div><div class="ttdef"><b>Definition</b> API_db.c:23</div></div>
+<div class="ttc" id="a_a_p_i__delay_8h_html_a2b21255bd7f7192db778983b15089208"><div class="ttname"><a href="_a_p_i__delay_8h.html#a2b21255bd7f7192db778983b15089208">bool_t</a></div><div class="ttdeci">bool bool_t</div><div class="ttdef"><b>Definition</b> API_delay.h:19</div></div>
+<div class="ttc" id="a_a_p_i__types_8h_html"><div class="ttname"><a href="_a_p_i__types_8h.html">API_types.h</a></div><div class="ttdoc">Inclusión y definición de tipos de datos que son utilizados en otros módulos.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Trabajo final PCSE: Archivo de código fuente LCD16x2_driver/Inc/API_lcd.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Trabajo final PCSE<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">En este trabajo se desarrollaron drivers para un módulo MFRC522 por SPI y para un display LCD por I2C.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Cargando...</div>
+<div class="SRStatus" id="Searching">Buscando...</div>
+<div class="SRStatus" id="NoMatches">Nada coincide</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_b0ae007ab579bb20680ee76571fb0d31.html">LCD16x2_driver</a></li><li class="navelem"><a class="el" href="dir_4ee31df1b8059cad1a82d2ef52f6641c.html">Inc</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">API_lcd.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_a_p_i__lcd_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef API_INC_API_LCD_H_</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define API_INC_API_LCD_H_</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;<a class="code" href="_a_p_i__lcd__port_8h.html">API_lcd_port.h</a>&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//constantes para cantidad de filas y columnas de un lcd 16x2</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#a13e512f70587e3a7af1f0162d9f7d62e">   14</a></span><span class="preprocessor">#define LCD_CANTIDAD_COLUMNAS           16</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#acdafa463c303894fc262da173829871b">   15</a></span><span class="preprocessor">#define LCD_CANTIDAD_FILAS              2</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//constantes para la posición inicial de cada fila</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#a89336306f10e9bd2c12f02e5aa5fb42b">   18</a></span><span class="preprocessor">#define LCD_FILA_1                      0x00</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#ad52592106bdeb37b721e7b2c8d61cb33">   19</a></span><span class="preprocessor">#define LCD_FILA_2                      0x40</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="foldopen" id="foldopen00024" data-start="{" data-end="};">
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">   24</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8ab4ae24c39f9cff11aff86d245c3e28ce">   25</a></span>    <a class="code hl_enumvalue" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8ab4ae24c39f9cff11aff86d245c3e28ce">LCD_OK</a>, <a class="code hl_enumvalue" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8a436765093a97917433c52af526c7b4fc">LCD_ERROR</a></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8a436765093a97917433c52af526c7b4fc">   26</a></span>} <a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a>;</div>
+</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#a8a2f12e0d2585405560c21f8ccf2c845">LCD_init</a>();</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#aab63a80e8b4373e36f3e30e2860f5419">LCD_clear</a>();</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#aec2104e050162db3bb83f8f44331b6c7">LCD_printChar</a>(<span class="keywordtype">char</span>);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#ae5cf6f863195676bdc31c7548836382a">LCD_printText</a>(<span class="keywordtype">char</span>*);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#ab0060fa4c701c268a2cb11a89241d3c7">LCD_setCursor</a>(uint8_t, uint8_t);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#a534de5c5280f7b7e9d51fc02bfa93f09">LCD_cursorOn</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><a class="code hl_enumeration" href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a> <a class="code hl_function" href="_a_p_i__lcd_8h.html#ac43ef3ac8991fdf2c39a2027cc9ef48b">LCD_cursorOff</a>();</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span><span class="preprocessor">#endif </span><span class="comment">/* API_INC_API_LCD_H_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_a534de5c5280f7b7e9d51fc02bfa93f09"><div class="ttname"><a href="_a_p_i__lcd_8h.html#a534de5c5280f7b7e9d51fc02bfa93f09">LCD_cursorOn</a></div><div class="ttdeci">LCD_StatusTypedef LCD_cursorOn()</div><div class="ttdoc">Muestra un cursor que parpadea en la pantalla del LCD.</div><div class="ttdef"><b>Definition</b> API_lcd.c:153</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_a8a2f12e0d2585405560c21f8ccf2c845"><div class="ttname"><a href="_a_p_i__lcd_8h.html#a8a2f12e0d2585405560c21f8ccf2c845">LCD_init</a></div><div class="ttdeci">LCD_StatusTypedef LCD_init()</div><div class="ttdoc">Realiza la inicialización del LCD para que quede listo para ser utilizado.</div><div class="ttdef"><b>Definition</b> API_lcd.c:56</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_a9aaf5249460d1a686c2d834f707b4fe8"><div class="ttname"><a href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8">LCD_StatusTypedef</a></div><div class="ttdeci">LCD_StatusTypedef</div><div class="ttdoc">Enum para devolver resultado de acciones del LCD.</div><div class="ttdef"><b>Definition</b> API_lcd.h:24</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_a9aaf5249460d1a686c2d834f707b4fe8a436765093a97917433c52af526c7b4fc"><div class="ttname"><a href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8a436765093a97917433c52af526c7b4fc">LCD_ERROR</a></div><div class="ttdeci">@ LCD_ERROR</div><div class="ttdef"><b>Definition</b> API_lcd.h:25</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_a9aaf5249460d1a686c2d834f707b4fe8ab4ae24c39f9cff11aff86d245c3e28ce"><div class="ttname"><a href="_a_p_i__lcd_8h.html#a9aaf5249460d1a686c2d834f707b4fe8ab4ae24c39f9cff11aff86d245c3e28ce">LCD_OK</a></div><div class="ttdeci">@ LCD_OK</div><div class="ttdef"><b>Definition</b> API_lcd.h:25</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_aab63a80e8b4373e36f3e30e2860f5419"><div class="ttname"><a href="_a_p_i__lcd_8h.html#aab63a80e8b4373e36f3e30e2860f5419">LCD_clear</a></div><div class="ttdeci">LCD_StatusTypedef LCD_clear()</div><div class="ttdoc">Borra el contenido de la pantalla del LCD.</div><div class="ttdef"><b>Definition</b> API_lcd.c:88</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_ab0060fa4c701c268a2cb11a89241d3c7"><div class="ttname"><a href="_a_p_i__lcd_8h.html#ab0060fa4c701c268a2cb11a89241d3c7">LCD_setCursor</a></div><div class="ttdeci">LCD_StatusTypedef LCD_setCursor(uint8_t, uint8_t)</div><div class="ttdoc">Posiciona el cursor del LCD en la posición indica por los argumentos de la función.</div><div class="ttdef"><b>Definition</b> API_lcd.c:96</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_ac43ef3ac8991fdf2c39a2027cc9ef48b"><div class="ttname"><a href="_a_p_i__lcd_8h.html#ac43ef3ac8991fdf2c39a2027cc9ef48b">LCD_cursorOff</a></div><div class="ttdeci">LCD_StatusTypedef LCD_cursorOff()</div><div class="ttdoc">Apaga el cursor.</div><div class="ttdef"><b>Definition</b> API_lcd.c:162</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_ae5cf6f863195676bdc31c7548836382a"><div class="ttname"><a href="_a_p_i__lcd_8h.html#ae5cf6f863195676bdc31c7548836382a">LCD_printText</a></div><div class="ttdeci">LCD_StatusTypedef LCD_printText(char *)</div><div class="ttdoc">Escribe un texto en la pantalla del LCD, comenzando desde la FILA 1 y posición 0. Si detecta el carac...</div><div class="ttdef"><b>Definition</b> API_lcd.c:118</div></div>
+<div class="ttc" id="a_a_p_i__lcd_8h_html_aec2104e050162db3bb83f8f44331b6c7"><div class="ttname"><a href="_a_p_i__lcd_8h.html#aec2104e050162db3bb83f8f44331b6c7">LCD_printChar</a></div><div class="ttdeci">LCD_StatusTypedef LCD_printChar(char)</div><div class="ttdoc">Coloca un único caracter en la pantalla del LCD.</div><div class="ttdef"><b>Definition</b> API_lcd.c:107</div></div>
+<div class="ttc" id="a_a_p_i__lcd__port_8h_html"><div class="ttname"><a href="_a_p_i__lcd__port_8h.html">API_lcd_port.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
