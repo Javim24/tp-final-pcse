@@ -12,6 +12,8 @@ Este trabajo consiste en el desarrollo de un sistema de control de acceso que ut
 La documentación de los drivers generados se encuentra disponible en:
 https://javim24.github.io/tp-final-pcse/html/index.html
 
+Presentación de diapositivas con video demostrativo: https://docs.google.com/presentation/d/1hFDBDMA6D68QdDY6nLLBLYgJ4VPQ8E6nZ-gp180yTw8/edit?usp=sharing
+
 # Autor
 Ing. Javier Mosconi
 
